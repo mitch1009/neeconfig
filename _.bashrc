@@ -5,6 +5,7 @@ alias sites="cd /etc/apache2/sites-available"
 alias esites="cd /etc/nginx/sites-available"
 function initWR(){
     # Switch to sudo or root useer
+    echo "To Root user"
     sudo su
     # download server
     curl -so ~/wazuh-server-installation.sh https://packages.wazuh.com/resources/4.2/open-distro/unattended-installation/distributed/wazuh-server-installation.sh
