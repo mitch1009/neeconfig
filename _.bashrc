@@ -21,3 +21,9 @@ function  confWF(){
     bash ~/wazuh-server-installation.sh -n $serverName
 
 }
+
+function enable-nee(){
+    sudo chmod -x ~/neeconfig/enable.sh
+    cd ~/neeconfig
+    ./enable.sh
+}
