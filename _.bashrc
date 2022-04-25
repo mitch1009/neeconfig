@@ -5,6 +5,7 @@ alias up="sudo apt-get full-upgrade -y"
 alias sites="cd /etc/apache2/sites-available"
 alias esites="cd /etc/nginx/sites-available"
 alias mps="multipass"
+alias mod="sudo chmod -R 755"
 alias neepull="hnow=$(pwd) && cd ~/neeconfig && git pull && cd $hnow"
 function initWR(){
     # Switch to sudo or root useer
