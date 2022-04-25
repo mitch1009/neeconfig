@@ -1,4 +1,5 @@
 alias i="sudo apt-get install -y"
+alias c="clear"
 alias u="apt-get update"
 alias up="sudo apt-get full-upgrade -y"
 alias sites="cd /etc/apache2/sites-available"
