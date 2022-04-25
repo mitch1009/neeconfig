@@ -28,3 +28,4 @@ function enable-nee(){
     cd ~/neeconfig
     ./enable.sh
 }
+echo "[NEECONFIG]: Enabled"
