@@ -1,6 +1,6 @@
 alias i="sudo apt-get install -y"
 alias u="apt-get update"
-alias up="sudo apt-get fuul-upgrade -y"
+alias up="sudo apt-get full-upgrade -y"
 alias sites="cd /etc/apache2/sites-available"
 alias esites="cd /etc/nginx/sites-available"
 alias mps="multipass"
