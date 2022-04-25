@@ -11,6 +11,6 @@ fi
 
 echo "
 nee=~/neeconfig/_.bashrc
-[ -f \$nee ] && source \$nee" | tee ~/.bashrc
+[ -f \$nee ] && source \$nee" | tee -a ~/.bashrc
 bash
 echo "$HOSTNAME has been configured by $USER on \date"
