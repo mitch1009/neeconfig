@@ -19,7 +19,7 @@ function  confWF(){
     sudo su
     echo "What should We call this Server ?:"
     read serverName
-    bash ~/wazuh-server-installation.sh -n $serverName
+    ./wazuh-server-installation.sh -n $serverName
 
 }
 
