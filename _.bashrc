@@ -15,7 +15,7 @@ function initWR(){
     bash ~/wazuh-server-installation.sh -n $serverName
 }
 
-function  confWF(){
+function  WF(){
     sudo su
     echo "What should We call this Server ?:"
     read serverName
