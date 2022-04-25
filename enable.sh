@@ -2,7 +2,7 @@
 set -e
 
 nee=~/neeconfig
-if [ -f $nee ]; 
+if [ -d $nee ]; 
 then
    echo "neeconfig is available"
 else :
