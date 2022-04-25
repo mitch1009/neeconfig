@@ -1,9 +1,10 @@
 alias i="sudo apt-get install -y"
 alias u="apt-get update"
-alias up="sudp apt-get fuul-upgrade -y"
+alias up="sudo apt-get fuul-upgrade -y"
 alias sites="cd /etc/apache2/sites-available"
 alias esites="cd /etc/nginx/sites-available"
 alias mps="multipass"
+alias neepull="hnow=$(pwd) && cd ~/neeconfig && git pull && cd $hnow"
 function initWR(){
     # Switch to sudo or root useer
     echo "To Root user"
