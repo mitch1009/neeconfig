@@ -1,13 +1,30 @@
 alias i="sudo apt-get install -y"
 alias c="clear"
-alias u="apt-get update"
+alias u="sudo apt-get update"
 alias up="sudo apt-get full-upgrade -y"
 alias sites="cd /etc/apache2/sites-available"
 alias esites="cd /etc/nginx/sites-available"
 alias mps="multipass"
 alias mod="sudo chmod -R 755"
+alias snip="sudo snap install"
+alias mst="microstack"
 alias vault="cd Divin-absa/password-vault && source env/bin/activate && python main.py"
 alias neepull="hnow=$(pwd) && cd ~/neeconfig && git pull && cd $hnow"
+
+# open stack installation using snap. 
+
+function ostack(){
+    u
+    up
+    snip microstack --beta
+    sudo microstack init --auto --control
+    echo 'give it a name'
+    read nane
+    microstack launch cirros -n $name
+    echo "the password: "
+    sudo snap get microstack config.credentials.keystone-password
+    echo 'Username: admin'
+}
 function initWR(){
     # Switch to sudo or root useer
     echo "To Root user"
