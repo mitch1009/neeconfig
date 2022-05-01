@@ -62,4 +62,7 @@ function enable-nee(){
 }
 echo "[NEECONFIG]: Enabled"
 
+enode=~/neeconfig/node.bashrc
+[ -f $enode ] && source $enode
+
 
