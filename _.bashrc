@@ -1,6 +1,7 @@
 alias i="sudo apt-get install -y"
 alias c="clear"
 alias u="sudo apt-get update"
+alias apa="sudo service apache2"
 alias up="sudo apt-get full-upgrade -y"
 alias sites="cd /etc/apache2/sites-available"
 alias esites="cd /etc/nginx/sites-available"
@@ -42,6 +43,14 @@ function  WR(){
     read serverName
     ./wazuh-server-installation.sh -n $serverName
 
+}
+function aproxy(){
+    
+sudo a2enmod proxy
+sudo a2enmod proxy_http
+sudo a2enmod proxy_balancer
+sudo a2enmod lbmethod_byrequests
+apa reload
 }
 
 function enable-nee(){
