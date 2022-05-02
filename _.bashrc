@@ -66,3 +66,7 @@ enode=~/neeconfig/node.bashrc
 [ -f $enode ] && source $enode
 
 
+doka=~/neeconfig/doker.bashrc
+[ -f $doka ] && source $doka
+
+
